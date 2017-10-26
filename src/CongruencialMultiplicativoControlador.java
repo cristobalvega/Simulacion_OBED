@@ -12,12 +12,12 @@ import java.awt.event.ActionListener;
  * El controlador coordina las interacciones
  * entre la vista y el modelo.
  */
-public class CalculadoraControlador {
+public class CongruencialMultiplicativoControlador {
 
     private CongruencialMultiplicativoVista la_vista;
     private CongruencialMultiplicativo el_modelo;
 
-    public CalculadoraControlador(CongruencialMultiplicativoVista la_vista, CongruencialMultiplicativo el_modelo){
+    public CongruencialMultiplicativoControlador(CongruencialMultiplicativoVista la_vista, CongruencialMultiplicativo el_modelo){
 
         this.la_vista = la_vista;
         this.el_modelo = el_modelo;
@@ -33,14 +33,14 @@ public class CalculadoraControlador {
     //Inner Class
     class EscuchadorCalcular implements ActionListener {
 
-        public void actionPerformed(ActionEvent e) {
+        public void actionPerformed(ActionEvent actionEvent) {
             int primerNumero, segundoNumero = 0;
 
             /**
              * Evolver las interacciones con la vista con un try/catch
              * en caso de que los números no sean propiamente entrados
              */
-
+            /**
             try{
                 primerNumero = la_vista.obtenerPrimerNumero();
                 segundoNumero = la_vista.obtenerSegundoNumero();
@@ -49,10 +49,19 @@ public class CalculadoraControlador {
                 la_vista.establecerSolucionCalculada(el_modelo.obtenerValorCalculado());
             }//try
 
+
             catch(NumberFormatException excepcion_numero){
                 System.out.println(excepcion_numero);
                 la_vista.mostrarMensajeError("Necesitas meter dos enteros");
             }//catch
+            */
+
+            try{
+
+            }//try
+            catch(Exception exception){
+
+            }//cath
 
         }//actionPerformed
 
