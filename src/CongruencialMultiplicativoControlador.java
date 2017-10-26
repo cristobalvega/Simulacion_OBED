@@ -33,7 +33,7 @@ public class CongruencialMultiplicativoControlador {
     //Inner Class
     class EscuchadorCalcular implements ActionListener {
 
-        public void actionPerformed(ActionEvent e) {
+        public void actionPerformed(ActionEvent actionEvent) {
             int primerNumero, segundoNumero = 0;
 
             /**
@@ -55,6 +55,13 @@ public class CongruencialMultiplicativoControlador {
                 la_vista.mostrarMensajeError("Necesitas meter dos enteros");
             }//catch
             */
+
+            try{
+
+            }//try
+            catch(Exception exception){
+
+            }//cath
 
         }//actionPerformed
 
